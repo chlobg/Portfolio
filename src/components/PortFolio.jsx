@@ -21,14 +21,12 @@ function PortFolio() {
       <h1 className="text-3xl font-bold mb-5">PortFolio</h1>
       <span className="underline font-semibold">Featured Projects</span>
 
-      {/* Grille fluide, sans tailles fixes */}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-5">
         {cardItem.map(({ id, logo, name }) => (
           <div
             key={id}
             className="group h-full overflow-hidden rounded-2xl border shadow-lg bg-white"
           >
-            {/* wrapper interne qui zoome, la carte reste à taille fixe */}
             <div className="p-4 transition-transform duration-300 group-hover:scale-105">
               <img
                 src={logo}
